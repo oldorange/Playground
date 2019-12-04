@@ -17,3 +17,5 @@ function combineReducers(reducers) {
         return nextState;
     }
 }
+
+module.exports = combineReducers;
