@@ -1,4 +1,12 @@
+let initState = {
+  count: 0
+}
+
 function counterReducer(state, action) {
+  if(!state){
+    state = initState;
+  }
+
   switch (action.type) {
     case 'INCREMENT':
       return {

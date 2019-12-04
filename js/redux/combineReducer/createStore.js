@@ -18,6 +18,8 @@ function createStore(reducer, initState) {
         return state;
     }
 
+    dispatch({ type: Symbol() })
+
     return {
         subscribe,
         dispatch,

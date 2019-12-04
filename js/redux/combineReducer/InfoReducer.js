@@ -1,4 +1,11 @@
+let initState = {
+  info: {name:"info_name", description: "info_desc"}
+}
+
 function InfoReducer(state, action) {
+  if(!state){
+    state = initState;
+  }
   switch (action.type) {
     case 'SET_NAME':
       return {
