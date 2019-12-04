@@ -1,4 +1,10 @@
-function createStore(reducer, initState) {
+
+
+function createStore(reducer, initState, rewriteCreateStoreFunc) {
+    if(rewriteCreateStoreFunc){
+        
+    }
+
     let state = initState;
     let listeners = [];
 

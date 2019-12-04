@@ -1,5 +1,5 @@
 let initState = {
-  info: {name:"info_name", description: "info_desc"}
+  name:"info_name", description: "info_desc"
 }
 
 function InfoReducer(state, action) {
